@@ -1,4 +1,11 @@
 <?php
+
+$testo= $_POST['testo'];
+
+$word= $_POST['word'];
+
+$new_text= str_replace($word,'****',$testo);
+
 ?>
 
 <!DOCTYPE html>
@@ -9,6 +16,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h3>Il tuo testo senza la parola <?php echo $word; ?></h3>
+    <p><?php echo $new_text; ?></p>    
 </body>
 </html>
