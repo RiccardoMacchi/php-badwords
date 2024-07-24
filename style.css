@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    background-color: darkslategrey;
+    border-radius: 10px;
+    height: 70vh;
+    margin-top: 20px;
+}
+
+h2 {
+    margin: 20px auto;
+    color: aqua;
+}
+
+#text_area {
+    width: 250px;
+}

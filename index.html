@@ -4,20 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <h2>Inserisi qui un testo e una parola da far sparire</h2>
+    <div class="container">
+        <h2>Inserisi qui un testo e una parola da far sparire</h2>
 
-    <form action="corrector.php" method="POST">
-        <label for="text">Il tuo testo</label>
-        <input type="textarea" name="testo">
+        <form action="corrector.php" method="POST">
+            <div>
+                <label for="text">Il tuo testo</label>
+                <textarea name="testo" id="text_area"></textarea>
+            </div>
 
-        <label for="word">La parola da cancellare</label>
-        <input type="text" name="word">
-        <button type="submit">Cancella la parola dal testo</button>
-    </form>
+            <div>
+                <label for="word">La parola da cancellare</label>
+                <input type="text" name="word">
+            </div>
+
+            <button type="submit">Cancella la parola dal testo</button>
+        </form>
+    </div>
 </body>
 
 </html>

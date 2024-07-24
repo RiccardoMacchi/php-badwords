@@ -6,6 +6,10 @@ $word= $_POST['word'];
 
 $new_text= str_replace($word,'****',$testo);
 
+$testo_length= strlen($testo);
+$new_testo_length= strlen($new_text);
+
+
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +20,16 @@ $new_text= str_replace($word,'****',$testo);
     <title>Document</title>
 </head>
 <body>
-    <h3>Il tuo testo senza la parola <?php echo $word; ?></h3>
-    <p><?php echo $new_text; ?></p>    
+    <div>
+        <h3>Il tuo testo originale è:</h3>
+        <p><?php echo $testo; ?></p>
+        <span>Il pragrafo è lungo: <?php echo $testo_length ?></span>
+    </div>
+    <div>
+        <h3>Il tuo testo senza la parola <?php echo $word; ?></h3>
+        <p><?php echo $new_text; ?></p>
+        <span>Il pragrafo corretto è lungo: <?php echo $new_testo_length ?></span>
+    </div>
+    
 </body>
 </html>
